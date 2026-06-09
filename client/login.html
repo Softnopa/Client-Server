@@ -6,7 +6,7 @@
     <title>Secure Access</title>
     <link rel="stylesheet" href="/client/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="/client/main.js"></script>
+    <script src="/client/main.js" defer></script>
 </head>
 <body>
 
@@ -21,17 +21,17 @@
                 <p>Please enter your credentials to unlock access.</p>
             </div>
 
-            <form id="login-form">
+            <form class="js-form">
                 <div class="input-group">
                     <i class="fas fa-user input-icon"></i>
-                    <input type="text" id="username" required placeholder=" ">
-                    <label for="username">Username</label>
+                    <input type="text" class="js-login" required placeholder=" ">
+                    <label>Username</label>
                 </div>
 
                 <div class="input-group">
                     <i class="fas fa-lock input-icon"></i>
-                    <input type="password" id="password" required placeholder=" ">
-                    <label for="password">Password</label>
+                    <input type="password" class="js-password" required placeholder=" ">
+                    <label>Password</label>
                 </div>
 
                 <button type="submit" class="submit-btn">

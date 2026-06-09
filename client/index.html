@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Access</title>
-    <link rel="stylesheet" href="/client/main.css">
+    <title>Dashboard - Secure Access</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="/client/main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
 
@@ -16,31 +16,16 @@
 
     <div class="login-container">
         <div class="login-card">
-            <div class="card-header">
-                <h2>Welcome Back</h2>
-                <p>Please enter your credentials to unlock access.</p>
+            <div class="card-header" style="text-align: center;">
+                <i class="fas fa-shield-toggle" style="font-size: 3rem; color: #10b981; margin-bottom: 1rem;"></i>
+                <h2>AccessGranted</h2>
+                <p>Welcome to the secure zone. Your token is active.</p>
             </div>
 
-            <form id="login-form">
-                <div class="input-group">
-                    <i class="fas fa-user input-icon"></i>
-                    <input type="text" id="username" required placeholder=" ">
-                    <label for="username">Username</label>
-                </div>
-
-                <div class="input-group">
-                    <i class="fas fa-lock input-icon"></i>
-                    <input type="password" id="password" required placeholder=" ">
-                    <label for="password">Password</label>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                    <span>Sign In</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </form>
-
-            <div id="status-message" class="status-message hidden"></div>
+            <button type="button" class="submit-btn js-logout" style="background: #ef4444; margin-top: 1rem;">
+                <span>Log Out</span>
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
         </div>
     </div>
 
