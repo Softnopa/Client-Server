@@ -1,0 +1,21 @@
+
+
+http://localhost:5000/api/auth/login
+    **Body** bo'limida, formatini **JSON** deb tanlash
+   {
+     "username": "admin",
+     "password": "admin123"
+   }
+
+
+http://localhost:5000/api/todos
+
+**Headers** bo'limiga o'ting va quyidagi maydonni qo'shing:
+   * **Key:** `Authorization`
+   * **Value:** `Bearer <1-qadamda nusxalab olgan tokeningiz>`
+   *(Eslatma: `Bearer` so'zidan keyin bitta joy tashlab, keyin tokenni qo'ying. Masalan: `Bearer eyJhbGciOi...`)*
+**Body** bo'limiga o'tib (JSON formatida) Todo nomini yozing:
+   ```json
+   {
+     "title": "Backend darsini takrorlash"
+   }
